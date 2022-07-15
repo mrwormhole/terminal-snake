@@ -1,0 +1,9 @@
+class Board
+  attr_reader size: Integer
+
+  attr_reader cells: Array[Array[String]]
+
+  def initialize: (Integer size) -> void
+
+  def create_board: () -> Array[Array[String]]
+end
