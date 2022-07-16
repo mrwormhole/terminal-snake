@@ -6,6 +6,7 @@ The dependencies:
 - Rspec (classic BDD)
 - RBS (for type hinting)
 - Pry (for debugging)
+- TTY reader (for reading input)
 
 The tests
 ```shell
@@ -27,4 +28,4 @@ The look & feel:
 ```
 
 The problems I had:
-- TruffleRuby breaks RBS codegen of jetbrains IDE, had to switch to Ruby 3.1.2 MRI couple of times to generate
+- TruffleRuby breaks RBS codegen, had to use Ruby 3.1.2 MRI couple of times to generate

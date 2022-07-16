@@ -37,23 +37,21 @@ class Snake
   end
 
   def turn(key_code)
-    case key_code.chr.downcase
-    when 'w'
-      @direction = :up
-    when 's'
-      @direction = :down
-    when 'a'
-      @direction = :left
-    when 'd'
-      @direction = :right
-    else
-      @direction = :up
+    case key_code.downcase
+    when "w"
+      @direction = :up unless @direction == :down
+    when "s"
+      @direction = :down unless @direction == :up
+    when "a"
+      @direction = :left unless @direction == :right
+    when "d"
+      @direction = :right unless @direction == :left
     end
   end
 
   def move
     new_head = [head.first,head.last]
-    case direction
+    case @direction
     when :left
       new_head[1] -= 1
     when :right
@@ -62,10 +60,8 @@ class Snake
       new_head[0] -= 1
     when :down
       new_head[0] += 1
-    else
-      return
     end
-    parts.unshift(new_head)
-    parts.pop unless parts.nil?
+    @parts.unshift(new_head)
+    @parts.pop unless parts.nil?
   end
 end

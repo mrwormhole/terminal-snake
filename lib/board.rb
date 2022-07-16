@@ -11,6 +11,10 @@ class Board
     Array.new(@size) { Array.new(@size, ".") }
   end
 
+  def reset
+    @cells = Array.new(@size) { Array.new(@size, ".") }
+  end
+
   def show_on_center(text)
     cursor = @center
     if @center - text.length / 2 >= 0

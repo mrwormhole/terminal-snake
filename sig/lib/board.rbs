@@ -3,9 +3,11 @@ class Board
 
   attr_reader cells: Array[Array[String]]
 
-  def initialize: (Integer size) -> void
+  def initialize: (size: Integer) -> void
 
   def create_board: () -> Array[Array[String]]
 
-  def show_on_center: (String text) -> void
+  def reset: () -> void
+
+  def show_on_center: (text: String) -> void
 end

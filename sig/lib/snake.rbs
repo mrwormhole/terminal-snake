@@ -7,11 +7,11 @@ class Snake
 
   attr_reader parts: Array[Array[Integer]]
 
-  def initialize: (Integer max_x, Integer max_y, Integer size) -> void
+  def initialize: (board_max_x: Integer, board_max_y: Integer, size: Integer) -> void
 
   def create_snake: () -> void
 
-  def set_random_position: (Integer max_x, Integer max_y) -> untyped
+  def set_random_position: (board_max_x: Integer, board_max_y: Integer) -> void
 
   def head: () -> Array[Integer]
 
@@ -19,9 +19,9 @@ class Snake
 
   def grow: () -> void
 
-  def set_head: (Integer index, Integer value) -> void
+  def set_head: (index: Integer, value: Integer) -> void
 
-  def turn: (String key_code) -> void
+  def turn: (key_code: String) -> void
 
   def move: () -> Array[Integer]
 end
