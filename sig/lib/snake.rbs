@@ -1,0 +1,27 @@
+class Snake
+  attr_reader size: Integer
+
+  attr_reader direction: Symbol
+
+  attr_reader position: Array[Integer]
+
+  attr_reader parts: Array[Array[Integer]]
+
+  def initialize: (Integer max_x, Integer max_y, Integer size) -> void
+
+  def create_snake: () -> void
+
+  def set_random_position: (Integer max_x, Integer max_y) -> untyped
+
+  def head: () -> Array[Integer]
+
+  def body: () -> Array[Array[Integer]]
+
+  def grow: () -> void
+
+  def set_head: (Integer index, Integer value) -> void
+
+  def turn: (String key_code) -> void
+
+  def move: () -> Array[Integer]
+end

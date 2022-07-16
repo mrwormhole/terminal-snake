@@ -6,4 +6,6 @@ class Board
   def initialize: (Integer size) -> void
 
   def create_board: () -> Array[Array[String]]
+
+  def show_on_center: (String text) -> void
 end
