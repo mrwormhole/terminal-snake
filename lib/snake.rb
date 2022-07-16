@@ -1,11 +1,11 @@
 class Snake
   attr_reader :size, :direction, :position, :parts
 
-  def initialize(max_x, max_y, size)
+  def initialize(board_max_x, board_max_y, size)
     @size = size
     @direction = :left
     @parts = []
-    set_random_position(max_x, max_y)
+    set_random_position(board_max_x, board_max_y)
     create_snake
   end
 
@@ -15,8 +15,8 @@ class Snake
     end
   end
 
-  def set_random_position(max_x, max_y)
-    @position = [Random.rand(0..max_x-1), Random.rand(0..max_y-1)]
+  def set_random_position(board_max_x, board_max_y)
+    @position = [Random.rand(0..board_max_x-1), Random.rand(0..board_max_y-1)]
   end
 
   def head
