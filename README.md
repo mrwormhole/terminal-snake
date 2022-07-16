@@ -14,18 +14,9 @@ rspec --format doc
 ```
 
 The look & feel:
-``` 
-  1 2 3 4 5 6 7 8 9 
-1 . . . . . . . . . 
-2 . . . . . . . . . 
-3 . . . . . . o . . 
-4 . . . . . . . . . 
-5 . . x x x x . . . 
-6 . . . . . . . . . 
-7 . . . . . . . . . 
-8 . . . . . . . . . 
-9 . . . . . . . . .
-```
+
+![terminal-snake](https://user-images.githubusercontent.com/22800416/179356533-9a3a1130-bf5e-4163-af3b-ac2f9764c103.gif)
 
 The problems I had:
 - TruffleRuby breaks RBS codegen, had to use Ruby 3.1.2 MRI couple of times to generate
+
