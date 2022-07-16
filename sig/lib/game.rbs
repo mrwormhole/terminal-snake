@@ -33,9 +33,9 @@ class Game
 
   def update_snake: () -> void
 
-  def check_if_snake_met_wall: () -> nil
+  def check_if_snake_met_wall: () -> void
 
-  def check_if_snake_ate_food: () -> nil
+  def check_if_snake_ate_food: () -> void
 
-  def check_if_snake_ate_itself: () -> nil
+  def check_if_snake_ate_itself: () -> void
 end
