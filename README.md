@@ -8,6 +8,4 @@ No dependencies required, all standard library of the snake lang :)
 python main.py
 ```
 
-The look & feel:
-
-![terminal-snake](add-giff-here)
+![terminal-snake](./demo.gif)
