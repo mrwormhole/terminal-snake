@@ -1,9 +1,0 @@
-class Food
-  attr_reader x: Integer
-
-  attr_reader y: Integer
-
-  def initialize: (board_max_x: Integer, board_max_y: Integer) -> void
-
-  def position: () -> Array[Integer]
-end
