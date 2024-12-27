@@ -1,6 +1,6 @@
 # Terminal Snake
 
-The purpose: Have fun! Terminal Snake written in SNAKE LANG!!!
+The purpose: Have fun! Terminal Snake written in SNAKE LANG, only in 256 lines :flame:
 
 No dependencies required, all standard library of the snake lang :)
 

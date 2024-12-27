@@ -248,11 +248,7 @@ S:::::::::::::::SS n::::n    n::::n a::::::::::aa:::ak::::::k   k:::::kee:::::::
 
 
 if __name__ == "__main__":
-    game: Game
-    if len(sys.argv) > 1:
-        game = Game(board_size=int(sys.argv[1]))
-    else:
-        game = Game()
+    game: Game = Game(board_size=int(sys.argv[1])) if len(sys.argv) > 1 else Game()
     try:
         game.run()
     except KeyboardInterrupt:
